@@ -9,9 +9,9 @@ import {
   Image,
 } from '@chakra-ui/react';
 import bulle from "../assets/bulle.jpg"
-import Signup from '../Pages/Sign-up'
 
-const SignupForm = ({onChange, form, navigate}) => {
+
+const SignupForm = ({onChange, form,signup, navigate}) => {
   return (
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -46,7 +46,7 @@ const SignupForm = ({onChange, form, navigate}) => {
             <Button
               colorScheme={'blue'} 
               variant={'solid'}
-              onClick={() => Signup(form, navigate)}
+              onClick={() => signup(form, navigate)}
             >
               Create
             </Button>

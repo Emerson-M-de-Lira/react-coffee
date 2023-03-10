@@ -7,8 +7,9 @@ const Header = () => {
                 Cookenu
             </Button>
             <Button color={"white"} variant="link">
-                Perfil
+                contato
             </Button>
+           
         </Flex>
     )
 }

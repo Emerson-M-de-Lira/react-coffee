@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import cremoso from "../assets/coffe.cremoso.jpg"
 
-const LoginForm = ({ login, form, onChange, navigate, goToFeedPage}) => {
+const LoginForm = ({ Login, form, onChange, navigate, goToFeedPage }) => {
   return (
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex flex={1}>
@@ -32,8 +32,8 @@ const LoginForm = ({ login, form, onChange, navigate, goToFeedPage}) => {
             <Input
               type="email"
               name="email"
-              onChange={onChange}
               value={form.email}
+              onChange={onChange}
             />
           </FormControl>
           <FormControl id="password">
@@ -41,26 +41,27 @@ const LoginForm = ({ login, form, onChange, navigate, goToFeedPage}) => {
             <Input
               type="password"
               name="password"
-              onChange={onChange}
               value={form.password}
+              onChange={onChange}
             />
           </FormControl>
           <Stack spacing={6}>
 
             <Button
+            bg={"#588157"}
               colorScheme={'blue'}
               variant={'solid'}
-              onClick={() => login(form, navigate)}
+              onClick={() => Login(form, navigate, goToFeedPage)}
             >
-              Regiter
+              Enter
             </Button>
 
             <Button
+              bg={"#588157"}
               colorScheme={'green'}
               variant={'solid'}
-              onClick={() =>(goToFeedPage)}
             >
-              Create
+              Create Users
             </Button>
 
           </Stack>
