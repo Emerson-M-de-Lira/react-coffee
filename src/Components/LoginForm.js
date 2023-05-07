@@ -1,4 +1,4 @@
-
+import React from 'react';
 import {
   Button,
   Flex,
@@ -9,7 +9,7 @@ import {
   Stack,
   Image
 } from '@chakra-ui/react';
-import cremoso from "../assets/coffe.cremoso.jpg"
+import cremoso from '../assets/coffe.cremoso.jpg';
 
 const LoginForm = ({ Login, form, onChange, navigate, goToFeedPage }) => {
   return (
@@ -25,10 +25,9 @@ const LoginForm = ({ Login, form, onChange, navigate, goToFeedPage }) => {
       </Flex>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
         <Stack spacing={4} w={'full'} maxW={'md'}>
-          <Heading fontSize={'2xl'}>Enter  account</Heading>
-
+          <Heading fontSize={'2xl'}>Enter account</Heading>
           <FormControl id="email">
-            <FormLabel>Email </FormLabel>
+            <FormLabel>Email</FormLabel>
             <Input
               type="email"
               name="email"
@@ -46,29 +45,27 @@ const LoginForm = ({ Login, form, onChange, navigate, goToFeedPage }) => {
             />
           </FormControl>
           <Stack spacing={6}>
-
             <Button
-            bg={"#588157"}
+              bg={'#588157'}
               colorScheme={'blue'}
               variant={'solid'}
               onClick={() => Login(form, navigate, goToFeedPage)}
             >
               Enter
             </Button>
-
             <Button
-              bg={"#588157"}
+              bg={'#588157'}
               colorScheme={'green'}
               variant={'solid'}
             >
               Create Users
             </Button>
-
           </Stack>
         </Stack>
       </Flex>
-
     </Stack>
   );
-}
-export default LoginForm
+};
+
+export default LoginForm;
+

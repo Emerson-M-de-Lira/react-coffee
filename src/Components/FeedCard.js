@@ -1,16 +1,12 @@
 import {
-  Center,
-  Box,
+  Center, Box, 
   useColorModeValue,
-  Heading,
-  Stack,
-  Image,
-  Button,
+  Heading, Stack,
+  Image, Button,
 } from '@chakra-ui/react';
 
 const FeedCard = ({ title, img }) => {
   return (
-    
     <Center py={12}>
       <Box
         role={'group'}
@@ -27,7 +23,7 @@ const FeedCard = ({ title, img }) => {
           mt={-12}
           pos={'relative'}
           height={'230px'}
-          
+
           _after={{
             transition: 'all .3s ease',
             content: '"',
@@ -45,9 +41,7 @@ const FeedCard = ({ title, img }) => {
               filter: 'blur(20px)',
             }
           }}
-
-
-          >
+        >
           <Image
             rounded={'lg'}
             height={230}

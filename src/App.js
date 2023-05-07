@@ -1,6 +1,6 @@
 
 import GlobalState from "./GlobalState/GlobalState";
-import  Router  from "./Router/Router";
+import  Router  from "./Routers/Router";
 
 const App = () => {
   return (

@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Button,
   Flex,
@@ -8,10 +9,9 @@ import {
   Stack,
   Image,
 } from '@chakra-ui/react';
-import bulle from "../assets/bulle.jpg"
+import bulle from '../assets/bulle.jpg';
 
-
-const SignupForm = ({onChange, form,signup, navigate}) => {
+const SignupForm = ({ onChange, form, signup, navigate }) => {
   return (
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -23,7 +23,8 @@ const SignupForm = ({onChange, form,signup, navigate}) => {
               type="text"
               name="name"
               onChange={onChange}
-              value={form.name} />
+              value={form.name}
+            />
           </FormControl>
           <FormControl id="email">
             <FormLabel>Email address</FormLabel>
@@ -31,7 +32,8 @@ const SignupForm = ({onChange, form,signup, navigate}) => {
               type="email"
               name="email"
               onChange={onChange}
-              value={form.email} />
+              value={form.email}
+            />
           </FormControl>
           <FormControl id="password">
             <FormLabel>Password</FormLabel>
@@ -39,18 +41,17 @@ const SignupForm = ({onChange, form,signup, navigate}) => {
               type="password"
               name="password"
               onChange={onChange}
-              Value={form.password} />
+              value={form.password}
+            />
           </FormControl>
           <Stack spacing={6}>
-
             <Button
-              colorScheme={'blue'} 
+              colorScheme={'blue'}
               variant={'solid'}
-              onClick={() => signup(form, navigate)}
+              OnClick={() => signup(form, navigate)}
             >
               Create
             </Button>
-
           </Stack>
         </Stack>
       </Flex>
@@ -65,5 +66,6 @@ const SignupForm = ({onChange, form,signup, navigate}) => {
       </Flex>
     </Stack>
   );
-}
-export default SignupForm
+};
+
+export default SignupForm;
